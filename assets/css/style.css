@@ -1558,4 +1558,115 @@ html,body{
     color:#1da1f3;
 }
 
+
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  #img{
+    width: 100px;
+  
+}
+#reviewsH1{
+    color:rgb(74, 159, 228);
+    margin-bottom: 10px;
+}
+  /* Fake image */
+  .fakeimg {
+      border: 2px solid rgb(74, 159, 228);
+      border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+  /*Give review section*/
+  .rate {
+    display: inline-block;
+    border: 0;
+}
+/* Hide radio */
+.rate > input {
+    display: none;
+}
+/* Order correctly by floating highest to the right */
+.rate > label {
+    float: right;
+}
+/* The star of the show */
+.rate > label:before {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: .3rem .2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+}
+/* Zero stars rating */
+.rate > label:last-child:before {
+    content: "\f006 "; /* empty star outline */
+}
+/* Half star trick */
+.rate .half:before {
+    content: "\f089 "; /* half star no outline */
+    position: absolute;
+    padding-right: 0;
+}
+/* Click + hover color */
+input:checked ~ label, /* color current and previous stars on checked */
+label:hover, label:hover ~ label { color: #2cdbb5;  } /* color previous stars on hover */
+
+/* Hover highlights */
+input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
+input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
+label:hover ~ input:checked ~ label /* highlight previous selected stars */ { color: #2cdbb5;  } 
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #2cdbb5;
+  }
+  input[type=text]:focus{
+    border-bottom: 2px solid #242726;
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
 /*========================Thank you=================*/
