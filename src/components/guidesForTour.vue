@@ -3,44 +3,7 @@
 <div>
 	
 
-<!--about-us start -->
-		<section id="home" class="about-us">
-			<div class="container">
-				<div class="about-us-content">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="single-about-us">
-								<div class="about-us-txt">
-									<h2>
-										9-Day Group Tour To Southern Part Of Ethiopia From Addis Ababa 
 
-									</h2>
-									<div class="about-btn ">
-										<h3 class="text-secondary">										Starting from  323432 ETB
-										</h3>
-										<button  class="about-view">
-											Book Now
-										</button>
-									</div>
-									<!--/.about-btn-->
-								</div><!--/.about-us-txt-->
-							</div><!--/.single-about-us-->
-						</div><!--/.col-->
-						<div class="col-sm-0">
-							<div class="single-about-us">
-								
-							</div><!--/.single-about-us-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.about-us-content-->
-			</div><!--/.container-->
-
-		</section><!--/.about-us-->
-		<!--about-us end -->
-
-		<!--travel-box end-->
-
-        <!--service start-->
 		<section id="service" class="service">
 			<div class="container">
 
