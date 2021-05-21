@@ -13,8 +13,7 @@
 
 									</h2>
 									<div class="about-btn">
-											<h3 class="text-secondary">										Starting from  323432 ETB
-										</h3>
+								
 										<a href="#gallery"><button  class="about-view">
 											explore now
 										</button></a>
