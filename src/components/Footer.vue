@@ -10,10 +10,10 @@
 							<div class="single-footer-item">
 								<div class="footer-logo">
 									<a href="index.html">
-										tour<span>Nest</span>
+										tour<span>Vago</span>
 									</a>
 									<p>
-										best travel agency
+										best tour agency
 									</p>
 								</div>
 							</div><!--/.single-footer-item-->
@@ -21,7 +21,7 @@
 
 						<div class="col-sm-3">
 							<div class="single-footer-item">
-								<h2>link</h2>
+								<h2></h2>
 								<div class="single-footer-txt">
 									<p><a href="#">home</a></p>
 									<p><a href="#">destination</a></p>
@@ -38,11 +38,10 @@
 							<div class="single-footer-item">
 								<h2>popular destination</h2>
 								<div class="single-footer-txt">
-									<p><a href="#">china</a></p>
-									<p><a href="#">venezuela</a></p>
-									<p><a href="#">brazil</a></p>
-									<p><a href="#">australia</a></p>
-									<p><a href="#">london</a></p>
+								<p><a href="#">Bahir Dar</a></p>
+									<p><a href="#">Lalibela</a></p>
+									<p><a href="#">Gondar</a></p>
+									<p><a href="#">Omo </a></p>
 								</div><!--/.single-footer-txt-->
 							</div><!--/.single-footer-item-->
 						</div><!--/.col-->
