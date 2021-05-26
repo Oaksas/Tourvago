@@ -99,14 +99,11 @@ export default {
 
 </script>
 <style scoped>
-      html, body {
-      min-height: 100%;
-      }
+   
       body, div, form, input, select, p { 
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: Roboto, Arial, sans-serif;
       font-size: 14px;
       color: #666;
       line-height: 22px;
@@ -115,7 +112,8 @@ export default {
       position: absolute;
       margin: 0;
       font-size: 36px;
-      color: #fff;
+      font-family: ALGERIAN;
+      color: rgb(238, 231, 231);
       z-index: 2;
       }
       span.required {
@@ -138,8 +136,8 @@ export default {
       .banner {
       position: relative;
       height: 180px;
-	  	  background-image: url("https://images.unsplash.com/photo-1621532747807-4464b7bccbb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
-
+	  	  background-image: url(../assets/images/home/3.jpg);
+      z-index: 1;
       background-size: cover;
       display: flex;
       justify-content: center;

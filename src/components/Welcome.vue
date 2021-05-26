@@ -1,14 +1,12 @@
 <template>
-
 	<div>
-
 		<section id="home" class="about-us">
 			<div class="container">
 				<div class="about-us-content">
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="single-about-us">
-								<div class="about-us-txt" >
+								<div class="about-us-txt" :style="btnStyles">
 									<h2>
 										Explore the Beauty of Home of the origin
 									</h2>
@@ -84,7 +82,14 @@ export default {
 	   created() {
     this.selectedImage = this.randomItem(this.images)
   },
-
+    computed: {
+    btnStyles() {
+      return {
+        "background-color": this.bgColor,
+        height: `${this.height}px`
+      };
+    }
+  }
 }
 
 </script>
@@ -95,7 +100,7 @@ export default {
     justify-content: center;
     align-items: center;
 	position: relative;
-	background: url({{selectedImage}})no-repeat;
+	background: url(../assets/images/home/1.jpg)no-repeat;
 	background-size: cover;
 	background-position: center;
 	min-height: 1000px;
