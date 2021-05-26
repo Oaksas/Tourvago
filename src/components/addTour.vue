@@ -46,13 +46,30 @@
    
         <div v-for="index in included" :key="index"  class="item">
           <input type="text" :name="index" :placeholder="index " required/>
+          <span>{{include[index]}}</span>
         </div>
            <p>What Excluded<span class="required">*</span></p>
                                     <button  v-on:click="addExcludes()"  href="/">Add </button>
 
    
         <div v-for="index in excluded" :key="index"  class="item">
-          <input type="text" :name="index" :placeholder="index " v:model="include[index]"  required/>
+          <input type="text" :name="index" :placeholder="index "   required />
+        </div>
+         <p>What to bring<span class="required">*</span></p>
+                                    <button  v-on:click="addBrings()"  href="/">Add </button>
+
+   
+        <div v-for="index in bring" :key="index"  class="item">
+          <input type="text" :name="index" :placeholder="index "   required />
+        </div>
+        
+        <p>Itinerary<span class="required">*</span></p>
+                                    <button  v-on:click="addItinerary()"  href="/">Add </button>
+
+   
+        <div v-for="index in itinerary" :key="index"  class="item">
+          <h2>Day {{index}}</h2>
+           <textarea id="textItinerary" :name="index" ></textarea>
         </div>
 
        
@@ -70,17 +87,18 @@
 <script>
 export default {
 
-  data () {
-    return {
+  data () { 
+        return {
       included:0,
       excluded:0,
+      itinerary:0,
+      bring:0,
       include:[],
+      itineraryList:[],
       exclude:[],
+      brings:[]
 
-       authors:[
-       'Aman','Alemitu','Aleme','Jefersa'
-       
-       ]
+     
     }
   },
   methods:{
@@ -99,10 +117,19 @@ export default {
     },
     addIncludes:function(){
       this.included +=1;
-      console.log(this.include[0]);
+    
+    },
+    addBrings:function(){
+      this.bring +=1;
+    
     },
     addExcludes:function(){
       this.excluded +=1;
+
+    },
+        addItinerary:function(){
+      this.itinerary +=1;
+
     },
   }
 }
