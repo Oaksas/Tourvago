@@ -99,19 +99,17 @@ export default {
 
 </script>
 <style scoped>
-      html, body {
-      min-height: 100%;
-      }
-      body, div, form, input, select, p { 
+           body, div, form, input, select, p { 
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: Roboto, Arial, sans-serif;
       font-size: 14px;
       color: #666;
       line-height: 22px;
       }
       h1 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
       position: absolute;
       margin: 0;
       font-size: 36px;

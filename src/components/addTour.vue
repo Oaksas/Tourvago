@@ -5,33 +5,31 @@
       <form action="/">
 
         <div class="banner">
-          <h1>TourVago</h1>
+          <h1>TourVago Add Tour</h1>
         </div>
-        <p class="top-info">This form is only be filled by the agent at Tourvago      <div class="item">
-          <p>Name<span class="required">*</span></p>
+           <div class="item">
+          <p>Name of the tour<span class="required">*</span></p>
           <div class="name-item">
             <input type="text" name="name" placeholder="Fullname" required/>
-            <input type="text" name="name" placeholder="Acronym" required/>
           </div>
         </div>
   
         <div class="item">
-          <p>Motto<span class="required">*</span></p>
+          <p>Description<span class="required">*</span></p>
           <input type="text" name="name"/>
         </div>
      
         <div class="item">
-          <p>Website<span class="required">*</span></p>
+          <p>Cost per person( in Birr)<span class="required">*</span></p>
           <input type="text" name="name" required/>
         </div>
      
         <div class="item">
-          <p>Physical Address<span class="required">*</span></p>
-          <input type="text" name="name" placeholder="Street address" required/>
+          <p> Address<span class="required">*</span></p>
+          <input type="text" name="name" placeholder="Country" required/>
           <div class="city-item">
             <input type="text" name="name" placeholder="City" required/>
             <input type="text" name="name" placeholder="Region" required/>
-            <input type="text" name="name" placeholder="Postal / Zip code" required/>
             <select>
               <option value="">Country</option>
               <option value="1">Russia</option>
@@ -42,18 +40,19 @@
             </select>
           </div>
         </div>
-        <div class="item">
-          <p>Email<span class="required">*</span></p>
+                  <p>What included<span class="required">*</span></p>
+                                    <button type="submit" href="/">Add </button>
+
+
+        <div  class="item">
           <input type="text" name="name" required/>
         </div>
-        <div class="item">
-          <p>Phone</p>
-          <input type="text" placeholder="(+251)" name="name"/>
-        </div>
+
+       
        
 
         <div class="btn-block">
-          <button type="submit" href="/">Add Agent</button>
+          <button type="submit" href="/">Add Tour</button>
         </div>
       </form>
     </div>
@@ -112,7 +111,7 @@ export default {
       position: absolute;
       margin: 0;
       font-size: 36px;
-      font-family: ALGERIAN;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: rgb(238, 231, 231);
       z-index: 2;
       }

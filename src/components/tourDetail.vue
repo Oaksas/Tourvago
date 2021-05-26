@@ -40,9 +40,9 @@
         <!--service start-->
 		<section id="service" class="service">
 			<div class="container">
+											<h2> {{ agent }} Travel Agency </h2>
 
 				<div class="service-counter row">
-
 					<div class="col-md-11 col-sm-11 fa-border">
 						<div class="single-service-box">
 							<div class="service-img">
@@ -414,33 +414,11 @@ export default {
 
   data () {
     return {
-       blog:{
-         title:"",
-         content:"",
-         audience:[],
-          author:"",
-
-       },
-       authors:[
-       'Aman','Alemitu','Aleme','Jefersa'
-       
-       ]
+		agent: this.$route.params.agent,
     }
   },
   methods:{
-    post:function(){
-            this.$http.get('https://jsonplaceholder.cypress.io/todos/1',{
-              userId:this.blog.author,
-              title:this.blog.audience,
-              content:this.blog.content,
-              author:this.blog.author
 
-
-            }).then(function(data){
-              console.log(data);
-            })
-      
-    }
   }
 }
 
