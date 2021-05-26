@@ -41,17 +41,23 @@
           </div>
         </div>
                   <p>What included<span class="required">*</span></p>
-                                    <button type="submit" href="/">Add </button>
+                                    <button  v-on:click="addIncludes()"  href="/">Add </button>
 
+   
+        <div v-for="index in included" :key="index"  class="item">
+          <input type="text" :name="index" :placeholder="index " required/>
+        </div>
+           <p>What Excluded<span class="required">*</span></p>
+                                    <button  v-on:click="addExcludes()"  href="/">Add </button>
 
-        <div  class="item">
-          <input type="text" name="name" required/>
+   
+        <div v-for="index in excluded" :key="index"  class="item">
+          <input type="text" :name="index" :placeholder="index " v:model="include[index]"  required/>
         </div>
 
        
-       
 
-        <div class="btn-block">
+        <div  class="btn-block">
           <button type="submit" href="/">Add Tour</button>
         </div>
       </form>
@@ -66,13 +72,11 @@ export default {
 
   data () {
     return {
-       blog:{
-         title:"",
-         content:"",
-         audience:[],
-          author:"",
+      included:0,
+      excluded:0,
+      include:[],
+      exclude:[],
 
-       },
        authors:[
        'Aman','Alemitu','Aleme','Jefersa'
        
@@ -92,7 +96,14 @@ export default {
               console.log(data);
             })
       
-    }
+    },
+    addIncludes:function(){
+      this.included +=1;
+      console.log(this.include[0]);
+    },
+    addExcludes:function(){
+      this.excluded +=1;
+    },
   }
 }
 
