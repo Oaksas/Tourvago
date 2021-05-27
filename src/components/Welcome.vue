@@ -1,12 +1,13 @@
 <template>
 	<div>
-		<section id="home" class="about-us">
+		<section id="home" class="about-us" >
 			<div class="container">
 				<div class="about-us-content">
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="single-about-us">
-								<div class="about-us-txt" :style="btnStyles">
+								<div class="about-us-txt"  >
+>
 									<h2>
 										Explore the Beauty of Home of the origin
 									</h2>
@@ -65,12 +66,15 @@ export default {
   	data () {
 		  return{
 	selectedImage: null,
+	destination,
+	checkIn,
+	duration,
 
     images: [
       '../assets/images/home/1.jpg',
       '../assets/images/home/2.jpg',
  '../assets/images/home/3.jpg',
-      '../assets/images/home/4.jpg',    ]
+      '../assets/images/home/4.jpg']
 		  }
 
   	},
@@ -80,16 +84,15 @@ export default {
     }
   	},
 	   created() {
+		   
+
     this.selectedImage = this.randomItem(this.images)
+
+	console.log(this.selectedImage);
+
   },
-    computed: {
-    btnStyles() {
-      return {
-        "background-color": this.bgColor,
-        height: `${this.height}px`
-      };
-    }
-  }
+
+  
 }
 
 </script>

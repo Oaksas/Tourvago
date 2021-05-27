@@ -425,5 +425,14 @@ export default {
 </script>
 
 <style scoped>
-
+.about-us{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	background: url(../assets/images/home/1.jpg)no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 1000px;
+}
 </style>

@@ -35,10 +35,10 @@
 
 															  	<option value="default">enter your destination country</option><!-- /.option-->
 
-															  	<option value="turkey">Lalibela</option><!-- /.option-->
+															  	<option value="lalibela">Lalibela</option><!-- /.option-->
 
-															  	<option value="russia">Aksum</option><!-- /.option-->
-															  	<option value="egept">Tana</option><!-- /.option-->
+															  	<option value="aksum">Aksum</option><!-- /.option-->
+															  	<option value="tana">Tana</option><!-- /.option-->
 
 															</select><!-- /.select-->
 														</div><!-- /.travel-select-icon -->
