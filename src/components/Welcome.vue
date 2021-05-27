@@ -66,9 +66,6 @@ export default {
   	data () {
 		  return{
 	selectedImage: null,
-	destination,
-	checkIn,
-	duration,
 
     images: [
       '../assets/images/home/1.jpg',

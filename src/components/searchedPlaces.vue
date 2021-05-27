@@ -31,7 +31,7 @@
 														<h2>destination</h2>
 
 														<div class="travel-select-icon">
-															<select class="form-control ">
+															<select class="form-control " :value="destination">
 
 															  	<option value="default">enter your destination country</option><!-- /.option-->
 
@@ -52,7 +52,7 @@
 														<h2>check in</h2>
 														<div class="travel-check-icon">
 															<form action="#">
-																<input type="text" name="check_in" class="form-control" data-toggle="datepicker" placeholder="12 -01 - 2017 ">
+																<input type="text" name="check_in" :value="checkIn" class="form-control" data-toggle="datepicker" placeholder="12 -01 - 2017 ">
 															</form>
 														</div><!-- /.travel-check-icon -->
 													</div><!--/.single-tab-select-box-->
@@ -63,7 +63,7 @@
 													<div class="single-tab-select-box">
 														<h2>duration</h2>
 														<div class="travel-select-icon">
-															<select class="form-control ">
+															<select class="form-control " :value="duration">
 
 															  	<option value="default">5</option><!-- /.option-->
 
@@ -468,17 +468,10 @@ export default {
 
   data () {
     return {
-       blog:{
-         title:"",
-         content:"",
-         audience:[],
-          author:"",
+destination,
+	checkIn,
+	duration,
 
-       },
-       authors:[
-       'Aman','Alemitu','Aleme','Jefersa'
-       
-       ]
     }
   },
   methods:{
