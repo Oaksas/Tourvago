@@ -29,9 +29,11 @@
 										<li class="smooth-menu"><a href="#blog">blog</a></li>
 										<li class="smooth-menu"><a href="#subs">subscription</a></li>
 										<li>
-											<button class="book-btn">Log in
-											</button>
-										</li><!--/.project-btn--> 
+											<button class="book-btn" v-show="!loggedIn">Log in</button>
+										</li>
+											<li>
+											<button class="book-btn" v-show="loggedIn" >Log out</button>
+										</li>
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</div><!-- /.main-menu-->
@@ -47,6 +49,8 @@
 <script>
 import {bus} from '../main';
 export default {
+	props:['loggedIn'],
+
     
   data () {
 	  

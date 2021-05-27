@@ -1,7 +1,7 @@
 <template>
 
 	<div>
-								<Header></Header>
+								<Header :loggedIn="loggedIn"></Header>
 
 		<section id="home" class="about-us" >
 			<div class="container">
@@ -10,7 +10,7 @@
 						<div class="col-sm-12">
 							<div class="single-about-us">
 								<div class="about-us-txt"  >
->
+
 									<h2>
 										Explore the Beauty of Home of the origin
 									</h2>
@@ -58,6 +58,7 @@ import Header from './Header.vue'
 
 
 export default {
+	props:['loggedIn'],
 	name: 'AnotherComponents',
 	components: {
 		SearchedPlaces,
@@ -72,6 +73,7 @@ export default {
   	data () {
 		  return{
 	selectedImage: null,
+	// loggedIn:false,
 
     images: [
       '../assets/images/home/1.jpg',

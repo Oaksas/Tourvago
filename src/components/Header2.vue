@@ -29,9 +29,13 @@
 										<li class="smooth-menu"><router-link to="/">Blog</router-link></li>
 										<li class="smooth-menu"><router-link to="/">Subscription</router-link></a></li>
 										<li>
-											<button class="book-btn">Log in
+											<button class="book-btn" v-show="!loggedIn">Log in
 											</button>
-										</li><!--/.project-btn--> 
+										</li>
+											<li>
+											<button class="book-btn" v-show="loggedIn">Log out
+											</button>
+										</li>
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</div><!-- /.main-menu-->
@@ -45,8 +49,8 @@
     </template>
 
 <script>
-import {bus} from '../main';
 export default {
+	  props:['loggedIn'],
     
   data () {
 	  
@@ -54,11 +58,7 @@ export default {
     }
   },
   methods:{
-      changeTitle:function(){
-  
-          this.title="Vue Changed";
-          bus.$emit('titleChanged','Vue Changed')
-      }
+
   }
 }
 </script>
@@ -68,7 +68,5 @@ header{
     background-color:black;
     
 }
-h1{
-    color:white;
-}
+
 </style>

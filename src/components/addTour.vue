@@ -1,7 +1,7 @@
 <template>
 
 <div>
-  <header-2></header-2>
+  <header-2 :loggedIn="loggedIn"></header-2>
      <div class="testbox">
       <form action="/">
 
@@ -89,6 +89,7 @@
     import Header2 from './Header2.vue'
 
 export default {
+
 components: {
 
 		Header2,

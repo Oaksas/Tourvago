@@ -296,7 +296,16 @@ html,body{
 /*-------------------------------------
 		3. 	About
 --------------------------------------*/
-
+.about-us{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	background: url(../images/home/4.jpg)no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 1000px;
+}
 .about-us:before{
 	position: absolute;
 	content: "";
@@ -1661,9 +1670,7 @@ input[type=text] {
     
 }
 /*Router Link*/
-.router-link{
-    color:green;
-}
+
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {

@@ -1,7 +1,7 @@
 <template>
 
     <div>
-      <router-view ></router-view>
+      <router-view  :loggedIn="loggedIn"></router-view>
       <app-footer></app-footer>
 <!-- <app-header></app-header>
   <app-blog ></app-blog>
@@ -59,6 +59,7 @@ export default {
     return {
 
       page:[true],
+      loggedIn:true,
 
     }
   },
