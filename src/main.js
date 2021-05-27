@@ -11,6 +11,7 @@ const router =new VueRouter({
        routes:Routes,
        mode:'history'
 });
+const page=true;
 
 Vue.directive('rainbow',{
 

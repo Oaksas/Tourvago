@@ -1,8 +1,7 @@
 <template>
 
     <div>
-      <app-header></app-header>
-      <router-view></router-view>
+      <router-view ></router-view>
       <app-footer></app-footer>
 <!-- <app-header></app-header>
   <app-blog ></app-blog>
@@ -56,8 +55,10 @@ export default {
 
 },
   data () {
+
     return {
-      title:"Vue Intro",
+
+      page:[true],
 
     }
   },

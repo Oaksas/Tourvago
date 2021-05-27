@@ -1,5 +1,8 @@
 <template>
+
 	<div>
+								<Header></Header>
+
 		<section id="home" class="about-us" >
 			<div class="container">
 				<div class="about-us-content">
@@ -39,6 +42,7 @@
 			<SpecialDiscounts></SpecialDiscounts>
 			<News></News>
 			<Subscribe></Subscribe>
+
 	</div>
 </template>
 
@@ -50,6 +54,7 @@ import Reviews from  './reviews.vue';
 import SpecialDiscounts from './specialDiscounts.vue';
 import News from  './news.vue';
 import Subscribe from  './subscribe.vue';
+import Header from './Header.vue'
 
 
 export default {
@@ -62,6 +67,7 @@ export default {
 		SpecialDiscounts,
 		News,
 		Subscribe,
+		Header,
 	},
   	data () {
 		  return{

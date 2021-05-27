@@ -1,6 +1,7 @@
 <template>
 
 <div>
+  <header-2></header-2>
      <div class="testbox">
       <form action="/">
 
@@ -85,8 +86,13 @@
     </template>
 
 <script>
-export default {
+    import Header2 from './Header2.vue'
 
+export default {
+components: {
+
+		Header2,
+	},  
   data () { 
         return {
       included:0,

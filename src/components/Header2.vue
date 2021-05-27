@@ -22,12 +22,12 @@
 								</div><!-- /.navbar-header-->
 								<div class="collapse navbar-collapse">		  
 									<ul class="nav navbar-nav navbar-right">
-										<li class="smooth-menu"><a href="#home">home</a></li>
-										<li class="smooth-menu" ><a href="#gallery">Destination</a></li>
-										<li class="smooth-menu"><a href="#pack">Packages </a></li>
-										<li class="smooth-menu"><a href="#spo">Special Offers</a></li>
-										<li class="smooth-menu"><a href="#blog">blog</a></li>
-										<li class="smooth-menu"><a href="#subs">subscription</a></li>
+										<li class="smooth-menu"><router-link to="/">home</router-link></li>
+										<li class="smooth-menu" ><router-link to="/">Destination</router-link></li>
+										<li class="smooth-menu"><router-link to="/">Packages</router-link> </a></li>
+										<li class="smooth-menu"><router-link to="/">Special Offers</router-link></a></li>
+										<li class="smooth-menu"><router-link to="/">Blog</router-link></li>
+										<li class="smooth-menu"><router-link to="/">Subscription</router-link></a></li>
 										<li>
 											<button class="book-btn">Log in
 											</button>

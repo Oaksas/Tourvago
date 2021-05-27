@@ -93,7 +93,7 @@
 																	<div class="info_widget">
 																		<div class="price_filter">
 																			
-																			<div id="slider-range"></div><!--/.slider-range-->
+																			<div id="slider-range" :value="budget"></div><!--/.slider-range-->
 
 																			<div class="price_slider_amount">
 																				<input type="text" id="amount" name="price"  placeholder="Add Your Price" />
@@ -471,6 +471,7 @@ export default {
 destination,
 	checkIn,
 	duration,
+	budget,
 
     }
   },
@@ -487,7 +488,10 @@ destination,
               console.log(data);
             })
       
-    }
+    },
+created(){
+console.log("budget");
+}
   }
 }
 
