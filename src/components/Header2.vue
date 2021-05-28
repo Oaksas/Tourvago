@@ -28,12 +28,14 @@
 										<li class="smooth-menu"><router-link to="/">Special Offers</router-link></a></li>
 										<li class="smooth-menu"><router-link to="/">Blog</router-link></li>
 										<li class="smooth-menu"><router-link to="/">Subscription</router-link></a></li>
+										<li class="smooth-menu" v-show="!loggedIn"><router-link to="/history">History</router-link></a></li>
+
 										<li>
-											<button class="book-btn" v-show="!loggedIn">Log in
+											<button class="book-btn" v-show="loggedIn">Log in
 											</button>
 										</li>
 											<li>
-											<button class="book-btn" v-show="loggedIn">Log out
+											<button class="book-btn" v-show="!loggedIn">Log out
 											</button>
 										</li>
 									</ul>

@@ -28,6 +28,8 @@
 										<li class="smooth-menu"><a href="#spo">Special Offers</a></li>
 										<li class="smooth-menu"><a href="#blog">blog</a></li>
 										<li class="smooth-menu"><a href="#subs">subscription</a></li>
+										<li class="smooth-menu" v-show="loggedIn"><router-link to="/history">History</router-link></a></li>
+
 										<li>
 											<button class="book-btn" v-show="!loggedIn">Log in</button>
 										</li>

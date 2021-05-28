@@ -1,6 +1,8 @@
 <template>
 
 <div>
+	  <header-2 :loggedIn="loggedIn"></header-2>
+
 	<section id="home" class="about-us">
 			<div class="container">
 				<div class="about-us-content">
@@ -410,8 +412,13 @@
     </template>
 
 <script>
-export default {
+  import Header2 from './Header2.vue'
 
+export default {
+components: {
+
+		Header2,
+	},
   data () {
     return {
 		agent: this.$route.params.agent,

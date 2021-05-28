@@ -3,7 +3,7 @@
 	<div>
 								<Header :loggedIn="loggedIn"></Header>
 
-		<section id="home" class="about-us" >
+		<section id="home" class="about-us"  >
 			<div class="container">
 				<div class="about-us-content">
 					<div class="row">
