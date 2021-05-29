@@ -367,34 +367,7 @@
 	</div>
   </div>
 
-  <div class="container">
- <h1>Give us your review</h1>
-  
- <form>
 
-	<input type="text" id="lname" name="message">
-	<fieldset class="rate">
-		<input type="radio" id="rating10" name="rating" value="10" /><label for="rating10" title="5 stars"></label>
-		<input type="radio" id="rating9" name="rating" value="9" /><label class="half" for="rating9" title="4 1/2 stars"></label>
-		<input type="radio" id="rating8" name="rating" value="8" /><label for="rating8" title="4 stars"></label>
-		<input type="radio" id="rating7" name="rating" value="7" /><label class="half" for="rating7" title="3 1/2 stars"></label>
-		<input type="radio" id="rating6" name="rating" value="6" /><label for="rating6" title="3 stars"></label>
-		<input type="radio" id="rating5" name="rating" value="5" /><label class="half" for="rating5" title="2 1/2 stars"></label>
-		<input type="radio" id="rating4" name="rating" value="4" /><label for="rating4" title="2 stars"></label>
-		<input type="radio" id="rating3" name="rating" value="3" /><label class="half" for="rating3" title="1 1/2 stars"></label>
-		<input type="radio" id="rating2" name="rating" value="2" /><label for="rating2" title="1 star"></label>
-		<input type="radio" id="rating1" name="rating" value="1" /><label class="half" for="rating1" title="1/2 star"></label>
-		<input type="radio" id="rating0" name="rating" value="0" /><label for="rating0" title="No star"></label>
-	</fieldset>
-	<input type="submit"  class="about-view" value="Submit">
-
-
-
-</form>
-   
-
-  </div>
- 
 
 			
 		<!--/.service-content-->
@@ -404,20 +377,23 @@
 
 		</section><!--/.service-->
 		
-	
+<review></review>
 </div>
 
 
 
-    </template>
+</template>
 
 <script>
   import Header2 from './Header2.vue'
+    import review from './review.vue'
+
 
 export default {
 components: {
 
 		Header2,
+		review,
 	},
   data () {
     return {

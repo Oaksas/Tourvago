@@ -23,18 +23,19 @@
 								<div class="collapse navbar-collapse">		  
 									<ul class="nav navbar-nav navbar-right">
 										<li class="smooth-menu"><a href="#home">home</a></li>
+										
 										<li class="smooth-menu" ><a href="#gallery">Destination</a></li>
 										<li class="smooth-menu"><a href="#pack">Packages </a></li>
 										<li class="smooth-menu"><a href="#spo">Special Offers</a></li>
 										<li class="smooth-menu"><a href="#blog">blog</a></li>
 										<li class="smooth-menu"><a href="#subs">subscription</a></li>
-										<li class="smooth-menu" v-show="loggedIn"><router-link to="/history">History</router-link></a></li>
+										<li class="smooth-menu" v-show="loggedIn"><router-link to="/history">History</router-link></li>
 
 										<li>
 											<button class="book-btn" v-show="!loggedIn">Log in</button>
 										</li>
 											<li>
-											<button class="book-btn" v-show="loggedIn" >Log out</button>
+											<button class="book-btn" v-show="loggedIn" @click="temp" >Log out</button>
 										</li>
 									</ul>
 								</div><!-- /.navbar-collapse -->
@@ -57,6 +58,7 @@ export default {
   data () {
 	  
     return {
+		name:"aman"
     }
   },
   methods:{
@@ -64,7 +66,10 @@ export default {
   
           this.title="Vue Changed";
           bus.$emit('titleChanged','Vue Changed')
-      }
+      },
+	  temp:function(){
+		alert("worked"+this.name)
+	  }
   }
 }
 </script>

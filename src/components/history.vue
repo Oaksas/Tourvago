@@ -2,7 +2,9 @@
 
 <div>
   <header-2 :loggedIn="loggedIn"></header-2>
+  
 	<section id="home" class="about-us">
+		
 			<div class="container">
 				<div class="about-us-content">
 					<div class="row">
@@ -33,37 +35,13 @@
 		<!--travel-box end-->
 
         <!--service start-->
+	
 		<section id="service" class="service">
 			<div class="container">
 
 				<div class="service-counter row">
 
-					<div class="col-md-11 col-sm-11 fa-border">
-						<div class="single-service-box">
-							<div class="service-img">
-								<!-- <img src="https://img.icons8.com/cotton/64/000000/regular-document.png"/> -->
-							</div><!--/.service-img-->
-							<div class="service-content">
-								<h2>
-									<a href="#" id="reviewsH1">
-									Description
-									</a>
-								</h2>
-								<p>Southern Ethiopia is known for its     beautiful nature and wildlife. 
-									Visit the Chamo lake to see the huge crocodiles and the hippos. 
-									Head to the village of Konso to visit their social organization and  terraces which they are known for .
-									 Visit the Dorze village and experience the hard-working life of the locals known for their cloth making out of cotton 
-									See the Mursi tribe which are known for their lip piercing,
-									Visit the Dassanach tribe that lives near the border kenya. 
-									Visit the pride Hammar tribe known for their bull jumping event (a pre marriage event) .</p>
-							</div>
-
-							
-
-
-
-						</div><!--/.single-service-box-->
-					</div>
+					
                         <hr>
 					
 				
@@ -135,7 +113,7 @@
 	    import Header2 from './Header2.vue'
 
 export default {
-	
+	props:['loggedIn'],
 components: {
 
 		Header2,

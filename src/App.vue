@@ -1,19 +1,9 @@
 <template>
 
     <div>
-      <router-view  :loggedIn="loggedIn"></router-view>
+      <router-view ></router-view>
       <app-footer></app-footer>
-<!-- <app-header></app-header>
-  <app-blog ></app-blog>
-<searched-places></searched-places>
-<top-dests></top-dests>
-<discount></discount>
-<special-offer></special-offer>
-<reviews></reviews>
-<special-discounts></special-discounts>
-<news></news>
-<subscribe></subscribe>
-  <app-footer></app-footer> -->
+
     </div>
 </template>
 

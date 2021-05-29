@@ -22,20 +22,20 @@
 								</div><!-- /.navbar-header-->
 								<div class="collapse navbar-collapse">		  
 									<ul class="nav navbar-nav navbar-right">
-										<li class="smooth-menu"><router-link to="/">home</router-link></li>
+										<li class="smooth-menu"><router-link :to="{name:'welcome'}">home</router-link></li>
 										<li class="smooth-menu" ><router-link to="/">Destination</router-link></li>
-										<li class="smooth-menu"><router-link to="/">Packages</router-link> </a></li>
-										<li class="smooth-menu"><router-link to="/">Special Offers</router-link></a></li>
+										<li class="smooth-menu"><router-link to="/">Packages</router-link> </li>
+										<li class="smooth-menu"><router-link to="/">Special Offers</router-link></li>
 										<li class="smooth-menu"><router-link to="/">Blog</router-link></li>
-										<li class="smooth-menu"><router-link to="/">Subscription</router-link></a></li>
-										<li class="smooth-menu" v-show="!loggedIn"><router-link to="/history">History</router-link></a></li>
+										<li class="smooth-menu"><router-link to="/">Subscription</router-link></li>
+										<li class="smooth-menu" v-show="loggedIn"><router-link to="/history">History</router-link></li>
 
 										<li>
-											<button class="book-btn" v-show="loggedIn">Log in
+											<button class="book-btn" v-show="log">Log in
 											</button>
 										</li>
 											<li>
-											<button class="book-btn" v-show="!loggedIn">Log out
+											<button class="book-btn" v-show="!log">Log out
 											</button>
 										</li>
 									</ul>
@@ -57,6 +57,7 @@ export default {
   data () {
 	  
     return {
+		log:this.loggedIn
     }
   },
   methods:{

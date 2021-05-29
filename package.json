@@ -3,7 +3,7 @@
   "description": "A Vue.js project",
   "version": "1.0.0",
   "author": "Oaksas <aman.getnet2@gmail.com>",
-  "license": "MIT",
+  "license": "AZUR",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
