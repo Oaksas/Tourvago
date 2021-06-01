@@ -178,7 +178,7 @@ components: {
 
 </script>
 
-<style scoped>
+<style >
 .about-us{
 	display: flex;
     justify-content: center;

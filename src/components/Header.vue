@@ -20,7 +20,8 @@
 										<i class="fa fa-bars"></i>
 									</button><!-- / button-->
 								</div><!-- /.navbar-header-->
-								<div class="collapse navbar-collapse">		  
+								<div v-if="isMain" class="collapse navbar-collapse" >		  
+                                      
 									<ul class="nav navbar-nav navbar-right">
 										<li class="smooth-menu"><a href="#home">home</a></li>
 										
@@ -38,7 +39,40 @@
 											<button class="book-btn" v-show="loggedIn" @click="temp" >Log out</button>
 										</li>
 									</ul>
+
+
+
+
+									
 								</div><!-- /.navbar-collapse -->
+     
+
+	 <!-- Second navigation-->
+	 		<div v-if="!isMain" class="collapse navbar-collapse">		  
+									<ul class="nav navbar-nav navbar-right">
+										<li class="smooth-menu"><router-link to="/">home</router-link></li>
+										<li class="smooth-menu" ><router-link to="/">Destination</router-link></li>
+										<li class="smooth-menu"><router-link to="/">Packages</router-link> </li>
+										<li class="smooth-menu"><router-link to="/">Special Offers</router-link></li>
+										<li class="smooth-menu"><router-link to="/">Blog</router-link></li>
+										<li class="smooth-menu"><router-link to="/">Subscription</router-link></li>
+										<li class="smooth-menu" v-show="loggedIn"><router-link to="/history">History</router-link></li>
+
+										<li>
+											<button class="book-btn" v-show="log">Log in
+											</button>
+										</li>
+											<li>
+											<button class="book-btn" v-show="!log">Log out
+											</button>
+										</li>
+									</ul>
+								</div>
+
+
+
+
+
 							</div><!-- /.main-menu-->
 						</div><!-- /.col-->
 					</div><!-- /.row -->
@@ -58,7 +92,8 @@ export default {
   data () {
 	  
     return {
-		name:"aman"
+		name:"aman",
+		isMain:false,
     }
   },
   methods:{
@@ -69,7 +104,16 @@ export default {
       },
 	  temp:function(){
 		alert("worked"+this.name)
+	  },
+	  changeNav:function(){
+		if(this.$route.name == "homeContent"){
+			  this.isMain =true;
+		  };
 	  }
+
+  },
+  beforeMount(){
+	  this.changeNav()
   }
 }
 </script>

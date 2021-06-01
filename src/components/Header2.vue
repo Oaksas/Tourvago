@@ -22,7 +22,7 @@
 								</div><!-- /.navbar-header-->
 								<div class="collapse navbar-collapse">		  
 									<ul class="nav navbar-nav navbar-right">
-										<li class="smooth-menu"><router-link :to="{name:'welcome'}">home</router-link></li>
+										<li class="smooth-menu"><router-link to="/">home</router-link></li>
 										<li class="smooth-menu" ><router-link to="/">Destination</router-link></li>
 										<li class="smooth-menu"><router-link to="/">Packages</router-link> </li>
 										<li class="smooth-menu"><router-link to="/">Special Offers</router-link></li>

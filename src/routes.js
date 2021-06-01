@@ -11,8 +11,19 @@ import empty from './components/emptyComp.vue';
 
 
 export default[
+    {path:'/book',component:book}
+    ,
     {
-        path:'/',
+        path:'/history',component:history
+    },
+    {
+        path:'/addAgent',component:addAgents
+    },
+    {path:'/addTour',component:addTour},
+
+
+    {
+        path:"/",
         name:"welcome",
     component:Welcome,
     children:[
@@ -32,7 +43,7 @@ export default[
     
 {
     path:'/:id',
-    name:"Tour",
+    name:"Tour", 
     component:empty, 
     children:[
         {
@@ -47,11 +58,5 @@ export default[
         }   
     ]
 
-},
-    {path:'/history',component:history},
-    {path:'/addAgent',component:addAgents},
-    {path:'/addTour',component:addTour},
-    {path:'/book',component:book}
-
-
+}
 ]
